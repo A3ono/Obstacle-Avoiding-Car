@@ -22,6 +22,8 @@ boolean goesForward=false;
 int distance = 100;
 int speedSet = 0;
 
+//++++++++++++++++++++++ SET-UP ++++++++++++++++++++++++++++++++
+
 void setup() {
 
   myservo.attach(10);  
@@ -36,6 +38,8 @@ void setup() {
   distance = readPing();
   delay(100);
 }
+
+//++++++++++++++++++++++ LOOP ++++++++++++++++++++++++++++++++
 
 void loop() {
  int distanceR = 0;
@@ -71,6 +75,8 @@ void loop() {
  distance = readPing();
 }
 
+//++++++++++++++++++++++ ULTRASONIC RANGE FINDER ++++++++++++++++++++++++++++++++
+
 int lookRight()
 {
     myservo.write(50); 
@@ -101,6 +107,9 @@ int readPing() {
   }
   return cm;
 }
+
+//++++++++++++++++++++++ MOVEMENTS ++++++++++++++++++++++++++++++++
+
 
 void moveStop() {
   motor1.run(RELEASE); 
