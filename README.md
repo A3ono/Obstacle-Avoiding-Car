@@ -1,6 +1,6 @@
 # Obstacle-Avoiding-Car
 <br>
-<b>Components:</b><br>
+<h3>Components:</h3>
 1. Arduino<br>
 2. L293D Motor Shield <br>
 3. Ultrsonic Sensor<br>
